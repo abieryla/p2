@@ -9,7 +9,14 @@ $words = array("travel", "car", "dog", "word", "heart", "sound", "pretzel", "mus
 
 # array for random password
 $pwd = [];
-$numwords = '3';
+
+# get user input of number of words to generate in password
+if (empty($_GET)) {
+	$numwords = 3;
+}
+else {
+	$numwords = $_GET["pwdlength"];
+}
 
 for($x = 1; $x <= $numwords; $x++) {
 	## Choose random word
