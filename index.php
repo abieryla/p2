@@ -23,18 +23,18 @@ ini_set('display_errors', 1);
 
 	<form action='index.php' method='GET'>
 		Enter number of words in password (0-9): 
-		<input type='text' name='pwdlength' size="5" maxlength="1"><br>
+		<input type='text' name='pwdlength' size='5' maxlength='1'><br> 
 		
 		Add a number? 
 		<input type='checkbox' name='number'><br>
 		Add a special character?
 		<input type='checkbox' name='special'><br>
 
-		<input type='submit' value='Generate a password!'>
+		<input type='submit' value='Generate a password!'><br><br>
 	</form>
 
 
-<!-- Generate Password  using logic.php and print to screen (default to display 3 words) -->
+<!-- Generate Password  using logic.php and print to screen (default to display 3 words, unless error in user input) -->
 	
 	<table>
 	   <tr>
